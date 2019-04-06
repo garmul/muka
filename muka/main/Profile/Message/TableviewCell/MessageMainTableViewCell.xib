@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="MessageMainTableViewCell" customModule="muka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QK-5G-aRo">
+                        <rect key="frame" x="278" y="20" width="67" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="nnU-Yr-bfu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-IL-z4m">
+                        <rect key="frame" x="63" y="59" width="261" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-hf-eiG">
+                        <rect key="frame" x="63" y="15" width="215" height="19"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redflame" translatesAutoresizingMaskIntoConstraints="NO" id="9Ed-jS-zXW">
+                        <rect key="frame" x="5" y="11" width="50" height="49"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-hE-frS">
+                        <rect key="frame" x="63" y="41" width="261" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="cmC-Gq-fxd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WIA-hf-eiG" firstAttribute="baseline" secondItem="1QK-5G-aRo" secondAttribute="baseline" id="5fe-Ga-8h9"/>
+                    <constraint firstItem="WIA-hf-eiG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="BLn-Zk-G0D"/>
+                    <constraint firstItem="zbf-hE-frS" firstAttribute="top" secondItem="WIA-hf-eiG" secondAttribute="bottom" constant="7" id="HTk-jp-JgW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9Ed-jS-zXW" secondAttribute="bottom" constant="19" id="Jty-FS-aO1"/>
+                    <constraint firstItem="bSC-IL-z4m" firstAttribute="top" secondItem="zbf-hE-frS" secondAttribute="bottom" constant="3" id="MFC-cV-HeO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zbf-hE-frS" secondAttribute="trailing" constant="30" id="OaI-Gy-c86"/>
+                    <constraint firstItem="WIA-hf-eiG" firstAttribute="leading" secondItem="9Ed-jS-zXW" secondAttribute="trailing" constant="8" symbolic="YES" id="Vwg-CL-5Q5"/>
+                    <constraint firstItem="9Ed-jS-zXW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="WeG-ck-D8i"/>
+                    <constraint firstItem="zbf-hE-frS" firstAttribute="leading" secondItem="bSC-IL-z4m" secondAttribute="leading" id="acf-xr-13n"/>
+                    <constraint firstItem="bSC-IL-z4m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="47" id="cxH-QX-Tbx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bSC-IL-z4m" secondAttribute="bottom" constant="-1" id="fsw-DV-ak1"/>
+                    <constraint firstItem="1QK-5G-aRo" firstAttribute="leading" secondItem="WIA-hf-eiG" secondAttribute="trailing" id="ghc-ly-iYg"/>
+                    <constraint firstItem="WIA-hf-eiG" firstAttribute="leading" secondItem="zbf-hE-frS" secondAttribute="leading" id="glB-xu-39j"/>
+                    <constraint firstItem="1QK-5G-aRo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="iYD-Rn-bvF"/>
+                    <constraint firstItem="zbf-hE-frS" firstAttribute="trailing" secondItem="bSC-IL-z4m" secondAttribute="trailing" id="kpK-8R-QlI"/>
+                    <constraint firstItem="9Ed-jS-zXW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-11" id="po4-uD-DAI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1QK-5G-aRo" secondAttribute="trailing" constant="9" id="xe6-GP-Hlj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyLogo" destination="9Ed-jS-zXW" id="PQQ-MW-ZSO"/>
+                <outlet property="customer" destination="WIA-hf-eiG" id="Xyr-nd-9RM"/>
+                <outlet property="message" destination="bSC-IL-z4m" id="dhp-JX-eGV"/>
+                <outlet property="messageDate" destination="1QK-5G-aRo" id="8Ke-fp-xyy"/>
+                <outlet property="subject" destination="zbf-hE-frS" id="EPl-Qo-Du8"/>
+            </connections>
+            <point key="canvasLocation" x="46.399999999999999" y="73.763118440779621"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="redflame" width="36" height="36"/>
+    </resources>
+</document>

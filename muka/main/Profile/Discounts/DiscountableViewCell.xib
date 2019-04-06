@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="DiscountableViewCell" customModule="muka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jamrock Delight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggN-Lq-m8k">
+                        <rect key="frame" x="84" y="11" width="264" height="26"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redflame" translatesAutoresizingMaskIntoConstraints="NO" id="aJd-vp-Fao">
+                        <rect key="frame" x="20" y="11" width="56" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="9Tw-UN-WYr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun-21-2002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eys-SM-fND">
+                        <rect key="frame" x="84" y="35" width="101" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="101" id="qTO-UC-rB4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0up-Yf-QJs">
+                        <rect key="frame" x="374" y="32" width="79" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="79" id="QXt-9D-UNB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ggN-Lq-m8k" firstAttribute="leading" secondItem="Eys-SM-fND" secondAttribute="leading" id="0au-f0-4PH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0up-Yf-QJs" secondAttribute="trailing" constant="-22" id="1H0-A5-d64"/>
+                    <constraint firstItem="aJd-vp-Fao" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="C2k-YF-MNX"/>
+                    <constraint firstItem="aJd-vp-Fao" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JEn-4W-sK2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0up-Yf-QJs" secondAttribute="bottom" constant="6" id="XLy-cP-5Xd"/>
+                    <constraint firstItem="aJd-vp-Fao" firstAttribute="top" secondItem="ggN-Lq-m8k" secondAttribute="top" id="a56-fp-BOS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aJd-vp-Fao" secondAttribute="bottom" constant="6" id="ij0-AP-vra"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ggN-Lq-m8k" secondAttribute="trailing" constant="83" id="jeE-kd-rG2"/>
+                    <constraint firstItem="ggN-Lq-m8k" firstAttribute="leading" secondItem="aJd-vp-Fao" secondAttribute="trailing" constant="8" symbolic="YES" id="lNw-0P-Drm"/>
+                    <constraint firstItem="Eys-SM-fND" firstAttribute="top" secondItem="ggN-Lq-m8k" secondAttribute="bottom" constant="-2" id="lfx-Ul-Y3l"/>
+                    <constraint firstItem="0up-Yf-QJs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="pGk-1m-RBn"/>
+                    <constraint firstItem="Eys-SM-fND" firstAttribute="top" secondItem="0up-Yf-QJs" secondAttribute="top" constant="3" id="xJl-Fo-PUg"/>
+                    <constraint firstItem="Eys-SM-fND" firstAttribute="centerY" secondItem="0up-Yf-QJs" secondAttribute="centerY" constant="2.5" id="zup-11-yT4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="restaurantDate" destination="Eys-SM-fND" id="TWr-LL-n0C"/>
+                <outlet property="restaurantDiscount" destination="0up-Yf-QJs" id="vLE-aE-3hM"/>
+                <outlet property="restaurantName" destination="ggN-Lq-m8k" id="UFe-V6-vzu"/>
+            </connections>
+            <point key="canvasLocation" x="234.40000000000001" y="168.6656671664168"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="redflame" width="36" height="36"/>
+    </resources>
+</document>

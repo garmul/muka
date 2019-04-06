@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="KGk-i7-Jjw" customClass="RestaurantListTableViewCell" customModule="muka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="622" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="622" height="174.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0e-hy-dyU">
+                        <rect key="frame" x="0.0" y="0.0" width="622" height="167"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jamaicaDinner3" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-0i-YA3">
+                                <rect key="frame" x="8" y="14" width="97" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="DH7-yV-qhh"/>
+                                    <constraint firstAttribute="height" constant="94" id="tkd-Us-Qny"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhO-gT-NQh">
+                                <rect key="frame" x="116" y="14" width="436" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="436" id="JQv-30-u4j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-4e-XbC">
+                                <rect key="frame" x="589" y="122" width="23" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="3ul-zb-gGF"/>
+                                </constraints>
+                                <state key="normal" image="navigateButton"/>
+                                <connections>
+                                    <action selector="navigateToLocation:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wo5-f3-fdO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 Miles Away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEh-hn-eTu">
+                                <rect key="frame" x="480" y="125" width="101" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Eof-oy-MVo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXH-jl-E8k">
+                                <rect key="frame" x="113" y="39" width="439" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-Cj-1jB" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="127" width="75" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jamaica-flag" translatesAutoresizingMaskIntoConstraints="NO" id="O51-Fs-TZt">
+                                <rect key="frame" x="577" y="30" width="35" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="HVZ-pl-zIb"/>
+                                    <constraint firstAttribute="height" constant="32" id="LMz-EM-Om6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tEh-hn-eTu" firstAttribute="centerY" secondItem="vsI-4e-XbC" secondAttribute="centerY" id="1yv-Yy-JZW"/>
+                            <constraint firstItem="Gih-0i-YA3" firstAttribute="leading" secondItem="y0e-hy-dyU" secondAttribute="leadingMargin" id="4tn-9B-dzq"/>
+                            <constraint firstItem="W5L-Cj-1jB" firstAttribute="top" secondItem="Gih-0i-YA3" secondAttribute="bottom" constant="19" id="6gZ-Yx-Wv3"/>
+                            <constraint firstItem="O51-Fs-TZt" firstAttribute="leading" secondItem="nXH-jl-E8k" secondAttribute="trailing" constant="25" id="95j-TF-cbm"/>
+                            <constraint firstAttribute="bottom" secondItem="W5L-Cj-1jB" secondAttribute="bottom" constant="23" id="BE4-F7-dsf"/>
+                            <constraint firstItem="vsI-4e-XbC" firstAttribute="leading" secondItem="tEh-hn-eTu" secondAttribute="trailing" constant="8" symbolic="YES" id="BaQ-KA-5Id"/>
+                            <constraint firstItem="nXH-jl-E8k" firstAttribute="trailing" secondItem="AhO-gT-NQh" secondAttribute="trailing" id="CO6-56-65o"/>
+                            <constraint firstAttribute="trailing" secondItem="vsI-4e-XbC" secondAttribute="trailing" constant="10" id="Kmf-OA-EET"/>
+                            <constraint firstItem="nXH-jl-E8k" firstAttribute="top" secondItem="y0e-hy-dyU" secondAttribute="top" constant="39" id="LU0-Hy-voc"/>
+                            <constraint firstItem="tEh-hn-eTu" firstAttribute="top" secondItem="AhO-gT-NQh" secondAttribute="bottom" constant="77" id="NMn-Bq-ycs"/>
+                            <constraint firstAttribute="bottom" secondItem="vsI-4e-XbC" secondAttribute="bottom" constant="23" id="SjB-E6-WCO"/>
+                            <constraint firstItem="AhO-gT-NQh" firstAttribute="leading" secondItem="nXH-jl-E8k" secondAttribute="leading" constant="3" id="VE2-EJ-bqd"/>
+                            <constraint firstItem="O51-Fs-TZt" firstAttribute="top" secondItem="y0e-hy-dyU" secondAttribute="top" constant="30" id="Z4y-xN-4PB"/>
+                            <constraint firstItem="AhO-gT-NQh" firstAttribute="top" secondItem="y0e-hy-dyU" secondAttribute="top" constant="14" id="fkp-Ox-0oe"/>
+                            <constraint firstItem="Gih-0i-YA3" firstAttribute="top" secondItem="y0e-hy-dyU" secondAttribute="top" constant="14" id="lAE-NU-kag"/>
+                            <constraint firstAttribute="bottom" secondItem="tEh-hn-eTu" secondAttribute="bottom" constant="26" id="pJy-fz-OaT"/>
+                            <constraint firstItem="tEh-hn-eTu" firstAttribute="top" secondItem="nXH-jl-E8k" secondAttribute="bottom" constant="17" id="qdj-kQ-nxj"/>
+                            <constraint firstItem="Gih-0i-YA3" firstAttribute="centerX" secondItem="W5L-Cj-1jB" secondAttribute="centerX" constant="-1" id="vGJ-ma-ky2"/>
+                            <constraint firstItem="AhO-gT-NQh" firstAttribute="leading" secondItem="Gih-0i-YA3" secondAttribute="trailing" constant="11" id="vsb-Lo-I55"/>
+                            <constraint firstAttribute="trailing" secondItem="O51-Fs-TZt" secondAttribute="trailing" constant="10" id="vsc-Xz-HgY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y0e-hy-dyU" secondAttribute="trailing" id="Ifn-Tx-bme"/>
+                    <constraint firstAttribute="bottom" secondItem="y0e-hy-dyU" secondAttribute="bottom" constant="7.6699999999999999" id="Ka8-4f-M3A"/>
+                    <constraint firstItem="y0e-hy-dyU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VD8-o9-VRZ"/>
+                    <constraint firstItem="y0e-hy-dyU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gDJ-lE-8OY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="flag" destination="O51-Fs-TZt" id="t1L-DG-pdH"/>
+                <outlet property="milesAway" destination="tEh-hn-eTu" id="EgH-xw-ImP"/>
+                <outlet property="restaurantDescription" destination="nXH-jl-E8k" id="Vdn-HN-xHm"/>
+                <outlet property="restaurantLogo" destination="Gih-0i-YA3" id="QMv-t1-FDN"/>
+                <outlet property="restaurantName" destination="AhO-gT-NQh" id="kOo-yS-uLv"/>
+                <outlet property="restaurantRating" destination="W5L-Cj-1jB" id="1bq-kY-c4l"/>
+            </connections>
+            <point key="canvasLocation" x="371.19999999999999" y="212.4384236453202"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jamaica-flag" width="64" height="64"/>
+        <image name="jamaicaDinner3" width="236" height="177"/>
+        <image name="navigateButton" width="225" height="225"/>
+    </resources>
+</document>

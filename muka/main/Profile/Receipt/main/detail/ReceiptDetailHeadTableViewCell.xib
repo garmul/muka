@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="ReceiptDetailHeadTableViewCell" customModule="__Love_Street_Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redflame" translatesAutoresizingMaskIntoConstraints="NO" id="0Qb-Yv-3gb">
+                        <rect key="frame" x="0.0" y="15" width="47" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="eKt-uj-WJE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kaisha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deU-6j-DsC">
+                        <rect key="frame" x="50" y="8" width="49" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-ci-BY9">
+                        <rect key="frame" x="50" y="36" width="67" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="pTu-CF-tKz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun-15-2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VW-6d-i8M">
+                        <rect key="frame" x="312" y="11" width="73" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Qb-Yv-3gb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="25J-d9-ry6"/>
+                    <constraint firstItem="deU-6j-DsC" firstAttribute="leading" secondItem="0Qb-Yv-3gb" secondAttribute="trailing" constant="3" id="2sr-DA-dcs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tUZ-ci-BY9" secondAttribute="bottom" constant="6" id="9Ub-nF-Xqv"/>
+                    <constraint firstItem="tUZ-ci-BY9" firstAttribute="top" secondItem="deU-6j-DsC" secondAttribute="bottom" constant="2" id="Dxm-LU-BS3"/>
+                    <constraint firstAttribute="trailing" secondItem="9VW-6d-i8M" secondAttribute="trailing" constant="20" id="e5M-c7-ZGb"/>
+                    <constraint firstItem="9VW-6d-i8M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="fHA-Xj-lEb"/>
+                    <constraint firstItem="deU-6j-DsC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="ohW-xU-5gx"/>
+                    <constraint firstItem="0Qb-Yv-3gb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="ow6-Up-BSX"/>
+                    <constraint firstItem="deU-6j-DsC" firstAttribute="leading" secondItem="tUZ-ci-BY9" secondAttribute="leading" id="tl0-ez-ED6"/>
+                    <constraint firstItem="0Qb-Yv-3gb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zPw-tK-k7h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyLogo" destination="0Qb-Yv-3gb" id="Bv0-Ri-c6T"/>
+                <outlet property="companyName" destination="deU-6j-DsC" id="Txm-h5-zmj"/>
+                <outlet property="dateReceived" destination="9VW-6d-i8M" id="qyA-0R-LOM"/>
+                <outlet property="total_Items" destination="tUZ-ci-BY9" id="nM4-Tk-Kxo"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="64.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="redflame" width="48" height="48"/>
+    </resources>
+</document>
